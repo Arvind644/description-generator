@@ -68,7 +68,7 @@ export async function POST(req: NextRequest) {
 
       rawResponse = res.choices[0].message?.content;
       descriptions = JSON.parse(rawResponse || "[]");
-    } catch (error) {
+    } catch {
       // If first attempt fails, try to extract JSON
       try {
         const extract = await together.chat.completions.create({
