@@ -91,7 +91,7 @@ export default function Home() {
   };
   
   return (
-    <div className="min-h-screen p-8 flex flex-col md:flex-row gap-8">
+    <div className="container mx-auto py-6 px-4 flex flex-col md:flex-row gap-8">
       <div className="flex-1 bg-white rounded-lg shadow-sm p-6">
         <h1 className="text-2xl font-bold mb-6">Product Description Generator</h1>
         <p className="text-gray-600 mb-6">Upload an image of your product to generate descriptions in multiple languages.</p>
