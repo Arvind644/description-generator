@@ -1,24 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Product Description Generator
+
+A Next.js application that uses Together AI's Llama 3.2 Vision model to generate detailed product descriptions in multiple languages based on uploaded product images.
+
+## Features
+
+- Upload product images
+- Generate descriptions in multiple languages (English, Spanish, French, German, Italian, Japanese, Korean, Chinese, Portuguese)
+- Choose description length (Short, Medium, Long)
+- Select Llama 3.2 Vision model size (11B or 90B)
+- Modern and clean UI
+
+## Tech Stack
+
+- Next.js 14 with App Router
+- React
+- TypeScript
+- Tailwind CSS
+- Together AI API (Llama 3.2 Vision model)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18.17 or later
+- Together AI API key
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Create a `.env.local` file in the root directory with your Together AI API key:
+
+```
+TOGETHER_API_KEY=your_together_api_key_here
+```
+
+4. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Upload a product image by clicking on the upload area or dragging and dropping an image
+2. Select the Llama 3.2 Vision model size (11B for faster results, 90B for higher quality)
+3. Choose up to 3 languages for the product descriptions
+4. Select the description length (Short, Medium, Long)
+5. Click "Generate descriptions" to get AI-generated product descriptions
+6. View and copy the generated descriptions from the right panel
+
+## License
+
+MIT
+
+## Acknowledgements
+
+- [Together AI](https://together.ai) for providing the Llama 3.2 Vision model API
+- [Next.js](https://nextjs.org) for the React framework
+- [Tailwind CSS](https://tailwindcss.com) for styling
 
 ## Learn More
 
